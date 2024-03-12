@@ -9,4 +9,11 @@ const AccordionSection = (props: ComponentProps): JSX.Element => {
     )
 }
 
-export default withDatasourceCheck()<ComponentProps>(AccordionSection);
+export const Default = (props: ComponentProps): JSX.Element => {
+    return(
+        <div>
+            <h2>test placeholder</h2>
+            <AccordionSection {...props} />
+        </div>
+    )
+}
