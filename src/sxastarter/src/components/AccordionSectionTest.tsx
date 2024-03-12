@@ -1,4 +1,4 @@
-import { Placeholder, withDatasourceCheck } from "@sitecore-jss/sitecore-jss-nextjs";
+import { Placeholder } from "@sitecore-jss/sitecore-jss-nextjs";
 import { ComponentProps } from "lib/component-props";
 
 const AccordionSection = (props: ComponentProps): JSX.Element => {
