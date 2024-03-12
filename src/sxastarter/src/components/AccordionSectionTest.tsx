@@ -5,10 +5,7 @@ export const AccordionSection = (props: ComponentProps): JSX.Element => {
     const placeholderName = 'pm-small-accord-placeholder';
     
     return (
-        <div>
-            <h1>test placeholder</h1>
-            <Placeholder name={placeholderName} rendering={props?.rendering} />
-        </div>
+        <Placeholder name={placeholderName} rendering={props?.rendering} />
     )
 }
 
