@@ -29,7 +29,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
   console.log(JSON.stringify(fields));
-  
+
   return (
     <>
       <Scripts />
