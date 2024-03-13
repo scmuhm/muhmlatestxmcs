@@ -30,11 +30,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
 
   console.log(JSON.stringify(fields));
 
+  const fullTitle = fields?.Title?.value?.toString() + '|' + fields?.TestField?.value?.toString();
+
   return (
     <>
       <Scripts />
       <Head>
-        <title>{fields?.Title?.value?.toString() || 'Page'}</title>
+        <title>{fullTitle}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
