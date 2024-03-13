@@ -28,19 +28,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
-  //test CS0436080
-  const TitleField = fields?.Title?.value?.toString();
-  console.log(TitleField);
-  const TestField = fields?.TestField?.value?.toString();
-  console.log(TestField);
-
-  const fullTitle = fields?.Title?.value?.toString() + '|' + fields?.TestField?.value?.toString();
-
+  console.log(JSON.stringify(fields));
+  
   return (
     <>
       <Scripts />
       <Head>
-        <title>{fullTitle}</title>
+        <title>{fields?.Title?.value?.toString() || 'Page'}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
