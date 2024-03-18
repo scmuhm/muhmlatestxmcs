@@ -43,7 +43,7 @@ const CardLinkListItem = (props: CardLinkListItemProps) => {
     className += ' last';
   }
   return (
-    <li>
+    <li className={className}>
       <div>
         <CTAButton
           field={props.field}

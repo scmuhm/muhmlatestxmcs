@@ -17,9 +17,7 @@ export interface CTAButtonProps {
   }
 
 export const CTAButton = (props: CTAButtonProps) => {
-    let adjProps: CTAButtonProps = { ...props };
-
-    return <CTAButtonElement {...adjProps} />;
+    return <CTAButtonElement {...props} />;
   };
 
   export const CTAButtonElement = ({
@@ -61,7 +59,7 @@ export const CTAButton = (props: CTAButtonProps) => {
          *   hide the the unwanted <A> in XP Editor.
          */}
         {sitecoreContext && sitecoreContext.pageEditing && (
-          <span className="sc-editor-link-wrapper">
+          <span>
             <Elem />
           </span>
         )}
