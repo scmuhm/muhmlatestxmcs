@@ -24,18 +24,7 @@ export const CTAButton = (props: CTAButtonProps) => {
 
   export const CTAButtonElement = ({
     field,
-    buttonType = 'primary',
-    size = 'medium',
-    label,
-    iconSize = undefined,
-    iconColor = 'currentColor',
-    iconPosition = 'left',
-    className,
-    renderAsLink = true,
-    iconAnimationClassName = '',
-    onClick,
-    submitForm = null,
-    ...props
+    renderAsLink = true
   }: CTAButtonProps): JSX.Element => {
     const { sitecoreContext } = useSitecoreContext();
   
@@ -44,15 +33,12 @@ export const CTAButton = (props: CTAButtonProps) => {
         <JssLink
           field={field}
           showLinkTextWithChildrenPresent={false}
-          {...props}
         >
           {children}
         </JssLink>
       );
     };
-  
-    iconSize = size === 'xsmall' ? 16 : 24;
-  
+
     const Elem = (): JSX.Element | null => {
       if (
         !(sitecoreContext && sitecoreContext.pageEditing) &&

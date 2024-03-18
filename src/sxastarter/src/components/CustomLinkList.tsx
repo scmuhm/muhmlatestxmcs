@@ -46,10 +46,7 @@ const CardLinkListItem = (props: CardLinkListItemProps) => {
     <li>
       <div>
         <CTAButton
-          buttonType={'link'}
           field={props.field}
-          size="medium"
-          className="w-full [&_.cta-button--label]:flex-grow"
         />
       </div>
     </li>
