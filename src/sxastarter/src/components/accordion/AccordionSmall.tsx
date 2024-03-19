@@ -1,10 +1,10 @@
 import { useSitecoreContext, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
+import { ComponentProps } from 'lib/component-props';
 import { CAccordion } from '@coreui/react';
 import {
   AccordionSmallItemProps,
   AccordionSmallItem,
-} from '@components/accordion/AccordionSmallItem';
+} from 'components/accordion/AccordionSmallItem';
 
 type AccordionSmallProps = ComponentProps & {
   fields: {

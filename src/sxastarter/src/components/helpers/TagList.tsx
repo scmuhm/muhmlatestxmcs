@@ -5,9 +5,9 @@ import {
   RouteData,
   ComponentRendering,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
+import { ComponentProps } from 'lib/component-props';
 import styles from '@styles/blocks/tag.module.css';
-import { CustomLink } from '@components/CustomLink';
+import { CustomLink } from 'components/CustomLink';
 
 type TagListProps = ComponentProps & {
   rendering: ComponentRendering | RouteData;

@@ -1,5 +1,5 @@
 import { Text, Field, Placeholder } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
+import { ComponentProps } from 'lib/component-props';
 import { CAccordionItem, CAccordionHeader, CAccordionBody } from '@coreui/react';
 
 export type AccordionSmallFlexibleItemProps = ComponentProps & {

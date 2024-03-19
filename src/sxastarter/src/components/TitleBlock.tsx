@@ -9,9 +9,9 @@ import {
   withDatasourceCheck,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
-import { CustomLink } from '@components/CustomLink';
-import { HorizontalJumpTagLink } from '@components/navigation/HorizontalJumpTagLink';
+import { ComponentProps } from 'lib/component-props';
+import { CustomLink } from 'components/CustomLink';
+import { HorizontalJumpTagLink } from 'components/navigation/HorizontalJumpTagLink';
 
 export type TitleBlockProps = ComponentProps & {
   rendering: ComponentRendering | RouteData;

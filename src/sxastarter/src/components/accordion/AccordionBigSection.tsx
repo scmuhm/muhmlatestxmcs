@@ -1,6 +1,6 @@
 import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
-import { AccordionSection, AccordionSectionProps } from '@components/accordion/AccordionSection';
+import { ComponentProps } from 'lib/component-props';
+import { AccordionSection, AccordionSectionProps } from 'components/accordion/AccordionSection';
 type AccordionBigSectionProps = ComponentProps & AccordionSectionProps;
 
 const AccordionBigSection = (props: AccordionBigSectionProps): JSX.Element => {

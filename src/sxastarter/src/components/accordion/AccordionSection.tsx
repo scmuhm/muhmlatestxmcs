@@ -1,7 +1,7 @@
-import { CustomLink } from '@components/CustomLink';
-import { HorizontalJumpTagLink } from '@components/navigation/HorizontalJumpTagLink';
-import { ComponentProps } from '@lib/component-props';
-import { Default as TitleBlock } from '@components/TitleBlock';
+import { CustomLink } from 'components/CustomLink';
+import { HorizontalJumpTagLink } from 'components/navigation/HorizontalJumpTagLink';
+import { ComponentProps } from 'lib/component-props';
+import { Default as TitleBlock } from 'components/TitleBlock';
 import { Field, LinkField, Placeholder, RichTextField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export type AccordionSectionProps = ComponentProps & {

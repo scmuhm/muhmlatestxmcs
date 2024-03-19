@@ -1,7 +1,7 @@
 import { Text, Field, Item } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
+import { ComponentProps } from 'lib/component-props';
 import { CAccordionItem, CAccordionHeader, CAccordionBody } from '@coreui/react';
-import TagList from '@components/helpers/TagList';
+import TagList from 'components/helpers/TagList';
 
 export type AccordionBigItemProps = ComponentProps & {
   itemKey: number;

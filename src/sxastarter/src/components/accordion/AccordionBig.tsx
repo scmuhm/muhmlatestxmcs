@@ -1,7 +1,7 @@
 import { useSitecoreContext, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from '@lib/component-props';
+import { ComponentProps } from 'lib/component-props';
 import { CAccordion } from '@coreui/react';
-import { AccordionBigItemProps, AccordionBigItem } from '@components/accordion/AccordionBigItem';
+import { AccordionBigItemProps, AccordionBigItem } from 'components/accordion/AccordionBigItem';
 
 type AccordionBigProps = ComponentProps & {
   fields: {
