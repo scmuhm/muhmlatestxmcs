@@ -2,10 +2,13 @@ import React from 'react';
 
 export const Default = (): JSX.Element => {
   return (
-    <div>
-      <h1>Test PDF Viewer</h1>        
-      <iframe src="https://www.w3schools.com/" title="W3Schools Test"></iframe>
-    </div>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://edge.sitecorecloud.io/pssapj1-muhmlatestxmc-dev-a914/media/Project/testSite/testSite/ADV_Plate.pdf"
+        width="100%"
+        height="100%"
+        title="testpdf"
+      ></iframe>    
   );
 };
 
@@ -15,10 +18,3 @@ export const Default = (): JSX.Element => {
 //        title="testpdf"
 //      ></object> /*
 
-//<iframe
-//        className="absolute top-0 left-0 w-full h-full"
-//        src="https://xmc-pssapj1-muhmlatestxmc-dev.sitecorecloud.io/-/media/Project/testSite/testSite/ADV_Plate.pdf"
-//        width="100%"
-//        height="100%"
-//        title="testpdf"
-//      ></iframe>    
