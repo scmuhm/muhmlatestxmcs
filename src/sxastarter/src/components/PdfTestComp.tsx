@@ -11,11 +11,3 @@ export const Default = (): JSX.Element => {
       ></iframe>    
   );
 };
-
-//<object
-//        className="absolute top-0 left-0 w-full h-full"
-//        data="https://xmc-pssapj1-muhmlatestxmc-dev.sitecorecloud.io/-/media/Project/testSite/testSite/ADV_Plate.pdf"
-//        title="testpdf"
-//      ></object> /*
-// 
-
