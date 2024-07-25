@@ -2,9 +2,8 @@ import DCA_CONSTANTS from 'components/DCAConstants';
 import JssConfig from '../temp/config';
 import { SitesMap } from 'scripts/graphql-extended-siteinfo-service';
 
-  
 type SiteInfoTuple = [string | undefined, string | undefined, string];
-  
+
 const extractPathComponents = (
   hostname: string,
   path: string
@@ -26,7 +25,7 @@ const extractPathComponents = (
 
     countrycodes = Object.keys(sitesMap);
   }
-  
+
   if (match) {
     [, countrycode, languagecode, pathname] = match;
 
@@ -50,8 +49,5 @@ const extractPathComponents = (
 
   return { countrycode, languagecode, pathname };
 };
- 
-  export {
-    extractPathComponents,
-  };
-  
+
+export { extractPathComponents };
