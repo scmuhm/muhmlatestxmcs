@@ -55,8 +55,8 @@ class MultisitePlugin implements MiddlewarePlugin {
     const hostname = req.headers.get('host')?.replace(/:\d+$/, '') ?? '';
 
     let sitesMap: SitesMap = {};
-    const multisitesData: { [key: string]: SitesMap } = JssConfig.sites
-      ? JSON.parse(JssConfig.sites)
+    const multisitesData: { [key: string]: SitesMap } = JssConfig.sitesData
+      ? JSON.parse(JssConfig.sitesData)
       : {};
     debug.multisite('MultisitePlugin - multisitesData: %o', multisitesData);
     if (Object.keys(multisitesData).length > 0) {
