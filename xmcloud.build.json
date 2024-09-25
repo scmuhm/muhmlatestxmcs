@@ -7,9 +7,8 @@
         "enabled": true,
         "type": "sxa",
         "lintCommand": "lint",
-        "startCommand": "start:production",
         "buildCommand": "build",
-        "runCommand": "start:production"
+        "runCommand": "start:custom"
       }
     },
     "postActions": {
